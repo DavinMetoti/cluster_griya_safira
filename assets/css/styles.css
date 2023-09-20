@@ -413,7 +413,7 @@ input {
   border-width: 0.6rem;
   border-color: var(--first-color);
   border-style: solid;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 /*=============== ABOUT ===============*/
@@ -556,8 +556,6 @@ input {
 
 /*=============== VIDEO ===============*/
 .video__container {
-  display: flex;
-  justify-items: center;
   padding-bottom: 1rem;
 }
 
@@ -569,7 +567,9 @@ input {
 .video__content {
   position: relative;
   width: 15rem;
+  margin: 0 auto;
 }
+
 
 .video__button {
   position: absolute;
@@ -679,8 +679,10 @@ input {
 .subscribe__form {
   background-color: var(--input-color);
   padding: .5rem;
+  width: 172px;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .subscribe__input {
@@ -826,7 +828,7 @@ input {
 @media screen and (max-width: 340px) {
 
   .place__container {
-    grid-template-columns: max-content;
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
   }
 
@@ -851,18 +853,23 @@ input {
   .video__container {
     padding: 0;
   }
+
+  .video__container {
+    display: block;
+    grid-template-columns: max-content;
+  }
 }
 
 /* For medium devices */
 @media screen and (min-width: 568px) {
   .video__container {
     display: grid;
-    grid-template-columns: .6fr;
+    grid-template-columns: .12fr;
     justify-content: center;
   }
 
   .place__container {
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .subscribe__form {
@@ -1016,6 +1023,7 @@ input {
     flex-direction: row;
     justify-content: space-between;
   }
+
 }
 
 /* For large devices */
@@ -1120,5 +1128,45 @@ input {
   .home__container,
   .home__img {
     height: 640px;
+  }
+}
+
+.row {
+  display: -ms-flexbox;
+  /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap;
+  /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  -ms-flex: 25%;
+  /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
   }
 }
