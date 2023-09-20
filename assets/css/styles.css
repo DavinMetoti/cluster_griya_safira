@@ -556,6 +556,8 @@ input {
 
 /*=============== VIDEO ===============*/
 .video__container {
+  display: flex;
+  justify-items: center;
   padding-bottom: 1rem;
 }
 
@@ -566,6 +568,7 @@ input {
 
 .video__content {
   position: relative;
+  width: 15rem;
 }
 
 .video__button {
@@ -586,7 +589,7 @@ input {
 }
 
 .place__container {
-  grid-template-columns: repeat(2, max-content);
+  grid-template-columns: repeat(3, max-content);
   justify-content: center;
 }
 
@@ -821,6 +824,7 @@ input {
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
 @media screen and (max-width: 340px) {
+
   .place__container {
     grid-template-columns: max-content;
     justify-content: center;
@@ -1088,7 +1092,7 @@ input {
   }
 
   .place__container {
-    gap: 3rem 2rem;
+    gap: 3rem 1rem;
   }
 
   .place__card,

@@ -35,10 +35,10 @@
                         <a href="#about" class="nav__link">About</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#discover" class="nav__link">Place</a>
+                        <a href="#discover" class="nav__link">Promo</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#place" class="nav__link">Type</a>
+                        <a href="#place" class="nav__link">Lokasi</a>
                     </li>
                 </ul>
 
@@ -123,25 +123,22 @@
 
         <!--==================== DISCOVER ====================-->
         <section class="discover section" id="discover">
-            <h2 class="section__title">Tren tipe rumah <br>Tahun 2023</h2>
+            <h2 class="section__title">Promo <br>Bulan ini</h2>
 
             <div class="discover__container container swiper-container">
                 <div class="swiper-wrapper">
                     <!--==================== DISCOVER 1 ====================-->
                     <div class="discover__card swiper-slide">
-                        <img src="assets/img/discover1.jpg" alt="" class="discover__img">
-                        <div class="discover__data">
-                            <h2 class="discover__title">Type 21</h2>
-                            <span class="discover__description">24 unit tersedia</span>
-                        </div>
+                        <video id="vidio-promo" autoplay controls class="discover__img">
+                            <source src="assets/video/promo_1.mp4" type="video/mp4">
+                        </video>
                     </div>
-
                     <!--==================== DISCOVER 2 ====================-->
                     <div class="discover__card swiper-slide">
                         <img src="assets/img/discover2.jpg" alt="" class="discover__img">
                         <div class="discover__data">
-                            <h2 class="discover__title">Type 36</h2>
-                            <span class="discover__description">15 unit tersedia</span>
+                            <h2 class="discover__title">De Tiara</h2>
+                            <span class="discover__description">3 Unit Depan Gate</span>
                         </div>
                     </div>
 
@@ -149,17 +146,17 @@
                     <div class="discover__card swiper-slide">
                         <img src="assets/img/discover3.jpg" alt="" class="discover__img">
                         <div class="discover__data">
-                            <h2 class="discover__title">Type 54</h2>
-                            <span class="discover__description">18 unit tersedia</span>
+                            <h2 class="discover__title">Denah</h2>
+                            <span class="discover__description">3 unit tersisa</span>
                         </div>
                     </div>
 
                     <!--==================== DISCOVER 4 ====================-->
                     <div class="discover__card swiper-slide">
-                        <img src="assets/img/discover4.jpg" alt="" class="discover__img">
+                        <img src="assets/img/discover1.jpg" alt="" class="discover__img">
                         <div class="discover__data">
-                            <h2 class="discover__title">Type 72</h2>
-                            <span class="discover__description">32 unit tersedia</span>
+                            <!-- <h2 class="discover__title">Type 72</h2>
+                            <span class="discover__description">32 unit tersedia</span> -->
                         </div>
                     </div>
                 </div>
@@ -167,14 +164,14 @@
         </section>
 
         <!--==================== EXPERIENCE ====================-->
-        <section class="experience section">
+        <section class="experience section" id="place">
             <h2 class="section__title">Hadir dikawasan paling berkembang <br>di Semarang Barat </h2>
 
             <div class="experience__container container grid">
                 <div class="experience__content grid">
                     <div class="experience__data">
                         <h2 class="experience__number">50 Unit</h2>
-                        <span class="experience__description">Unit Cluster <br>Tersedia</span>
+                        <span class="experience__description">Unit Cluster <br>Sudah Berpenghuni</span>
                     </div>
 
                     <div class="experience__data">
@@ -183,8 +180,8 @@
                     </div>
 
                     <div class="experience__data">
-                        <h2 class="experience__number">450jt</h2>
-                        <span class="experience__description">Harga <br> Termurah</span>
+                        <h2 class="experience__number">Lokasi</h2>
+                        <span class="experience__description">Strategis <br> Dekat kemanapun</span>
                     </div>
                 </div>
 
@@ -202,7 +199,7 @@
                             <div class="bingkai">
                                 <iframe
                                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3959.575393816835!2d110.29971907412627!3d-7.059073269176971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e706186e7ebf1c9%3A0x35faf9ba06c99970!2sGriya%20Safira%20Mijen!5e0!3m2!1sid!2sid!4v1695177466161!5m2!1sid!2sid"
-                                    width="600" height="450" style="border:0;border-radius: 20px;" allowfullscreen=""
+                                    width="350" height="350" style="border:0;border-radius: 20px;" allowfullscreen=""
                                     loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
@@ -212,7 +209,7 @@
         </section>
 
         <!--==================== VIDEO ====================-->
-        <section class="video section">
+        <section class="video section" id="tour_vidio">
             <h2 class="section__title">Video Tour</h2>
 
             <div class="video__container container">
@@ -222,7 +219,7 @@
 
                 <div class="video__content">
                     <video id="video-file">
-                        <source src="assets/video/video.mp4" type="video/mp4">
+                        <source src="assets/video/Video_Griya_Saphira.mp4" type="video/mp4">
                     </video>
 
                     <button class="button button--flex video__button" id="video-button">
@@ -237,7 +234,6 @@
             <h2 class="section__title">Choose Your Place</h2>
 
             <div class="place__container container grid">
-                <!--==================== PLACES CARD 1 ====================-->
                 <div class="place__card">
                     <img src="assets/img/place1.jpg" alt="" class="place__img">
 
@@ -247,18 +243,12 @@
                             <span class="place__rating-number">4,8</span>
                         </span>
 
-                        <div class="place__data">
+                        <!-- <div class="place__data">
                             <h3 class="place__title">Type 1</h3>
                             <span class="place__price">Rp. 450.000.0000</span>
-                        </div>
+                        </div> -->
                     </div>
-
-                    <button class="button button--flex place__button">
-                        <i class="ri-arrow-right-line"></i>
-                    </button>
                 </div>
-
-                <!--==================== PLACES CARD 2 ====================-->
                 <div class="place__card">
                     <img src="assets/img/place2.jpg" alt="" class="place__img">
 
@@ -268,18 +258,13 @@
                             <span class="place__rating-number">5,0</span>
                         </span>
 
-                        <div class="place__data">
+                        <!-- <div class="place__data">
                             <h3 class="place__title">Type 2</h3>
                             <span class="place__price">Rp. 740.000.000</span>
-                        </div>
+                        </div> -->
                     </div>
 
-                    <button class="button button--flex place__button">
-                        <i class="ri-arrow-right-line"></i>
-                    </button>
                 </div>
-
-                <!--==================== PLACES CARD 3 ====================-->
                 <div class="place__card">
                     <img src="assets/img/place3.jpg" alt="" class="place__img">
 
@@ -289,18 +274,13 @@
                             <span class="place__rating-number">4,9</span>
                         </span>
 
-                        <div class="place__data">
+                        <!-- <div class="place__data">
                             <h3 class="place__title">Type 3</h3>
                             <span class="place__price">Rp. 800.000.000</span>
-                        </div>
+                        </div> -->
                     </div>
 
-                    <button class="button button--flex place__button">
-                        <i class="ri-arrow-right-line"></i>
-                    </button>
                 </div>
-
-                <!--==================== PLACES CARD 4 ====================-->
                 <div class="place__card">
                     <img src="assets/img/place4.jpg" alt="" class="place__img">
 
@@ -310,18 +290,12 @@
                             <span class="place__rating-number">4,8</span>
                         </span>
 
-                        <div class="place__data">
+                        <!-- <div class="place__data">
                             <h3 class="place__title">Type 4</h3>
                             <span class="place__price">Rp. 600.000.000</span>
-                        </div>
+                        </div> -->
                     </div>
-
-                    <button class="button button--flex place__button">
-                        <i class="ri-arrow-right-line"></i>
-                    </button>
                 </div>
-
-                <!--==================== PLACES CARD 5 ====================-->
                 <div class="place__card">
                     <img src="assets/img/place5.jpg" alt="" class="place__img">
 
@@ -331,15 +305,71 @@
                             <span class="place__rating-number">4,8</span>
                         </span>
 
+                        <!-- <div class="place__data">
+                            <h3 class="place__title">Type 5</h3>
+                            <span class="place__price">Rp. 690.000.000</span>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="assets/img/place7.jpg" alt="" class="place__img">
+
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="ri-star-line place__rating-icon"></i>
+                            <span class="place__rating-number">4,8</span>
+                        </span>
+                        <!-- 
                         <div class="place__data">
                             <h3 class="place__title">Type 5</h3>
                             <span class="place__price">Rp. 690.000.000</span>
-                        </div>
+                        </div> -->
                     </div>
+                </div>
+                <div class="place__card">
+                    <img src="assets/img/place9.jpg" alt="" class="place__img">
 
-                    <button class="button button--flex place__button">
-                        <i class="ri-arrow-right-line"></i>
-                    </button>
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="ri-star-line place__rating-icon"></i>
+                            <span class="place__rating-number">4,8</span>
+                        </span>
+                        <!-- 
+                        <div class="place__data">
+                            <h3 class="place__title">Type 5</h3>
+                            <span class="place__price">Rp. 690.000.000</span>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="assets/img/place8.jpg" alt="" class="place__img">
+
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="ri-star-line place__rating-icon"></i>
+                            <span class="place__rating-number">4,8</span>
+                        </span>
+                        <!-- 
+                        <div class="place__data">
+                            <h3 class="place__title">Type 5</h3>
+                            <span class="place__price">Rp. 690.000.000</span>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="place__card">
+                    <img src="assets/img/place6.jpg" alt="" class="place__img">
+
+                    <div class="place__content">
+                        <span class="place__rating">
+                            <i class="ri-star-line place__rating-icon"></i>
+                            <span class="place__rating-number">4,8</span>
+                        </span>
+                        <!-- 
+                        <div class="place__data">
+                            <h3 class="place__title">Type 5</h3>
+                            <span class="place__price">Rp. 690.000.000</span>
+                        </div> -->
+                    </div>
                 </div>
             </div>
         </section>
@@ -348,8 +378,8 @@
         <section class="subscribe section">
             <div class="subscribe__bg">
                 <div class="subscribe__container container">
-                    <h2 class="section__title subscribe__title">Dapatkan Potongan <br> Hingga 10%</h2>
-                    <p class="subscribe__description">Untuk pembelian dengan cash dan dapatkan hadian menarik
+                    <h2 class="section__title subscribe__title">Dapatkan Potongan Pembelian <br>total 35jt</h2>
+                    <p class="subscribe__description">Spesial Premium Unit dengan Fasade Baru.
                     </p>
 
                     <form action="" class="subscribe__form">
