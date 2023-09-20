@@ -409,12 +409,6 @@ input {
   background: none;
 }
 
-.bingkai {
-  border-width: 0.6rem;
-  border-color: var(--first-color);
-  border-style: solid;
-  border-radius: 10px;
-}
 
 /*=============== ABOUT ===============*/
 .about__data {
